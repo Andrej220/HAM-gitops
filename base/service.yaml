@@ -5,10 +5,10 @@ metadata:
   name: nginx-exporter
 #  namespace: nginx
   labels:
-    app: nginx
+    app: ham
 spec:
   selector:
-    app: nginx
+    app: ham
   ports:
   - name: metrics
     protocol: TCP
