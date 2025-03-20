@@ -4,6 +4,10 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
+- digest: sha256:d6d423ca61637ae647dd3ac959a1620451140a88adb92ef329a710bbc9f703b9
+  name: nginx
+  newName: local-registry.registry.svc.cluster.local:5000/executor
+  newTag: latest
 - digest: sha256:b697747b309d93c46397e25d1bed773794df71293ad9f4fbd365a0fc902cde2a
   name: ssh-executor
   newName: local-registry.registry.svc.cluster.local:5000/ssh-executor
