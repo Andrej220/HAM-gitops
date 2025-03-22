@@ -16,8 +16,8 @@ spec:
         app: ham 
     spec:
       containers:
-      - name: ssh-executor
-        image: ssh-executor
+      - name: executor
+        image: local-registry.registry.svc.cluster.local:5000/executor
         ports:
         - containerPort: 8081
       - name: nginx-exporter
