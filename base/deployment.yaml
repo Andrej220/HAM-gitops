@@ -20,7 +20,6 @@ spec:
         image: local-registry.registry.svc.cluster.local:5000/executor
         ports:
         - containerPort: 8081
-        imagePullPolicy: Never
       - name: nginx-exporter
         image: nginx/nginx-prometheus-exporter:latest
         args:
