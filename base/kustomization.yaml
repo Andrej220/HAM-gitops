@@ -7,3 +7,7 @@ images:
 - digest: sha256:b697747b309d93c46397e25d1bed773794df71293ad9f4fbd365a0fc902cde2a
   name: executor
   newName: local-registry.registry.svc.cluster.local:5000/executor
+- digest: sha256:ba79651fbe4a9987fde80f6288c0dd5269a2b6937a89f763ace10abb9e626460
+  name: nginx
+  newName: local-registry.registry.svc.cluster.local:5000/executor
+  newTag: latest
