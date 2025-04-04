@@ -9,5 +9,9 @@ images:
   newName: local-registry.registry.svc.cluster.local:5000/executor
   newTag: latest
 - digest: sha256:b697747b309d93c46397e25d1bed773794df71293ad9f4fbd365a0fc902cde2a
-  name: ssh-executor
-  newName: local-registry.registry.svc.cluster.local:5000/ssh-executor
+  name: executor
+  newName: local-registry.registry.svc.cluster.local:5000/executor
+- digest: sha256:5372a31c8a35eca81178ee37e842b8c48bb6b6c83c004e04061bfed0d47b4f33
+  name: nginx
+  newName: local-registry.registry.svc.cluster.local:5000/executor
+  newTag: latest
