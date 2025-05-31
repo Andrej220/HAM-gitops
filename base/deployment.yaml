@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: executor
-        image: local-registry.registry.svc.cluster.local:5000/executor
+        image: local-registry.registry.svc.cluster.local:5000/datacollector
         ports:
         - containerPort: 8081
       - name: nginx-exporter
