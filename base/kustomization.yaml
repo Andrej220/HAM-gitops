@@ -1,6 +1,7 @@
 resources:
 - deployment.yaml
 - service.yaml
+- executor-service.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
@@ -11,7 +12,7 @@ images:
 - digest: sha256:b697747b309d93c46397e25d1bed773794df71293ad9f4fbd365a0fc902cde2a
   name: executor
   newName: local-registry.registry.svc.cluster.local:5000/executor
-- digest: sha256:5372a31c8a35eca81178ee37e842b8c48bb6b6c83c004e04061bfed0d47b4f33
+- digest: sha256:7e20c3881eff28e214ca97b93281106d6690e34fe6d6b3517b1abc2ddd2d46c7
   name: nginx
-  newName: local-registry.registry.svc.cluster.local:5000/executor
+  newName: local-registry.registry.svc.cluster.local:5000/datacollector
   newTag: latest
