@@ -1,7 +1,13 @@
 resources:
-  - ../../base/
+- ../../base/
 
 namespace: ham-test
 
 patchesStrategicMerge:
-  - patches.yaml
+- patches.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- digest: sha256:10678f50653da65293d459e97e71e4e5e485a529dd02131fcdffb90c6a2916b9
+  name: datacollector
+  newName: local-registry.registry.svc.cluster.local:5000/datacollector:latest
