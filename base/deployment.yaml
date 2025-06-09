@@ -20,6 +20,10 @@ spec:
         image: local-registry.registry.svc.cluster.local:5000/datacollector
         ports:
         - containerPort: 8081
+      - name: executor
+        image: local-registry.registry.svc.cluster.local:5000/datacollectorproducer
+        ports:
+        - containerPort: 8083
       - name: nginx-exporter
         image: nginx/nginx-prometheus-exporter:latest
         args:
