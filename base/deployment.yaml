@@ -33,6 +33,11 @@ spec:
         imagePullPolicy: IfNotPresent 
         ports:
         - containerPort: 8083
+        env:
+          - name: KAFKA_BROKERS
+            value: "kafka.kafka.svc.cluster.local:9092"
+          - name: KAFKA_TOPIC
+            value: "remote-requests"
         resources:
           requests:
             cpu: "100m"
