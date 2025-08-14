@@ -4,3 +4,10 @@ metadata:
   name: ham-deployment
 spec:
   replicas: 3
+  template:
+    spec:
+      containers:
+      - name: datacollector
+        env:
+        - name: APP_STAGE
+          value: "production"
