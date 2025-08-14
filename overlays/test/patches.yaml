@@ -4,4 +4,10 @@ metadata:
   name: ham-deployment
 spec:
   replicas: 1
-
+  template:
+    spec:
+      containers:
+      - name: datacollector
+        env:
+        - name: APP_STAGE
+          value: "test"
