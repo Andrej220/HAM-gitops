@@ -6,7 +6,7 @@ patchesStrategicMerge:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- digest: sha256:0043a2201b9c07002596eda039dde1ad0e8ca193c735678765802c372bebf802
+- digest: sha256:950269ecbeb1d5ae835347d138c569bd7e5a7be31a5a8dacf30a0f9cedfb5622
   name: datacollector
   newName: local-registry.registry.svc.cluster.local:5000/datacollector
 - digest: sha256:0f8d277c18deb3cb8625f21baa90fe72f0fe99e33db82813b12deead0345c2d1
