@@ -11,3 +11,5 @@ spec:
         env:
         - name: APP_STAGE
           value: "test"
+        - name: DATACOLLECTOR_CONFIG_PATH
+          value: /etc/ham/config.yaml
