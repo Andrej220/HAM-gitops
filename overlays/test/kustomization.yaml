@@ -9,6 +9,6 @@ images:
 - digest: sha256:b7cb394fa790d21e06af336b847cf16cdd2a86f386b60b3f53bdf9a206fb9e0b
   name: datacollector
   newName: local-registry.registry.svc.cluster.local:5000/datacollector
-- digest: sha256:72617ea20efd20a53b88e606c2f1f31978003b6e75269c40f12aae7c8e85463a
+- digest: sha256:5c2ede4dd3c8d532f38224088472612e2e03174e4dc0ae4b0d0f47ff76d1b05b
   name: datacollectorProducer
   newName: local-registry.registry.svc.cluster.local:5000/datacollectorproducer
