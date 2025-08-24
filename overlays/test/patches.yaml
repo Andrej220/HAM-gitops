@@ -12,4 +12,10 @@ spec:
         - name: APP_STAGE
           value: "test"
         - name: DATACOLLECTOR_CONFIG_PATH
+          value: /etc/ham/config.yaml     
+      - name: datacollector-producer
+        env:
+        - name: APP_STAGE
+          value: "test"
+        - name: DATACOLLECTORPRODUCER_CONFIG_PATH
           value: /etc/ham/config.yaml
