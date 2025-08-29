@@ -16,11 +16,11 @@ spec:
         app: ham 
     spec:
       containers:
-      - name: executor
+      - name: datacollector
         image: local-registry.registry.svc.cluster.local:5000/datacollector
         ports:
         - containerPort: 8081      
-      - name: executor
+      - name: datacollectorProducer
         image: local-registry.registry.svc.cluster.local:5000/datacollectorproducer
         ports:
         - containerPort: 8083
