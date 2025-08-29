@@ -8,12 +8,14 @@ spec:
     spec:
       containers:
       - name: datacollector
+        imagePullPolicy: Always
         env:
         - name: APP_STAGE
           value: "test"
         - name: DATACOLLECTOR_CONFIG_PATH
           value: /etc/ham/config.yaml     
       - name: datacollector-producer
+        imagePullPolicy: Always
         env:
         - name: APP_STAGE
           value: "test"
